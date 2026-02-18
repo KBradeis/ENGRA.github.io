@@ -511,5 +511,17 @@
               </div>
             </div>
           </div>
+          <script>
+            const images = document.querySelectorAll('.clickable-img');
+            const modalImage = document.getElementById('modalImage');
+          
+            images.forEach(img => {
+              img.addEventListener('click', function () {
+                modalImage.src = this.src;
+                const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+                modal.show();
+              });
+            });
+          </script>          
     </body>
 </html>
