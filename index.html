@@ -27,8 +27,17 @@
           .rotate-270 {
             transform: rotate(270deg);
           } 
-        </style>
-        
+
+          .clickable-img {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            }
+         .clickable-img.zoomed {
+            transform: scale(1.8);
+            position: relative;
+            z-index: 1055;
+        }
+    </style>    
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -512,16 +521,12 @@
             </div>
           </div>
           <script>
-            const images = document.querySelectorAll('.clickable-img');
-            const modalImage = document.getElementById('modalImage');
-          
-            images.forEach(img => {
-              img.addEventListener('click', function () {
-                modalImage.src = this.src;
-                const modal = new bootstrap.Modal(document.getElementById('imageModal'));
-                modal.show();
-              });
-            });
-          </script>          
+            document.querySelectorAll('.clickable-img').forEach(img => {
+        img.addEventListener('click', function () {
+      this.classList.toggle('zoomed');
+        });
+        });
+        </script>
+      </script>          
     </body>
 </html>
