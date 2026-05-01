@@ -508,6 +508,106 @@
                                     <h5 class="fw-bold mt-4">Review of Existing Open-Source Solutions</h5>
                                     <p>To better understand the current landscape of accessible gaming hardware, our team researched and fabricated existing open-source solutions to test their physical mechanisms and key features.</p>
 
+                                    <img src="..." class="mb-3" alt="..."/>
+                                    <h1>Design Project #5 Stage 2: Prototyping and Testing</h1>
+
+                                            <img src="prototype-lineup.jpg" alt="Chronological lineup of 3D printed handpieces and footmounts" width="600">
+
+                                            <h2>1 & 2. Needs Statement</h2>
+                                            <p><em>Based on the IBM Design Thinking Toolkit</em></p>
+                                            <ul>
+                                                <li><strong>Who:</strong> Individuals with upper limb differences, specifically those utilizing a residual limb or "knub" for computer interaction.</li>
+                                                <li><strong>What they need to do:</strong> Comfortably maneuver a computer cursor using their upper limb, while executing Left (Mouse 1) and Right (Mouse 2) clicks completely hands-free via foot switches.</li>
+                                                <li><strong>Why (The Insight):</strong> Standard computer mice are ergonomically designed for fingers and hands, making cursor movement difficult and clicking nearly impossible for this demographic. Separating the movement (via an ergonomic mouse attachment) from the clicking (via extended foot switches) allows for seamless, strain-free gaming and PC navigation.</li>
+                                            </ul>
+
+                                            <h2>3. Design Principles & Success Criteria</h2>
+                                            <h3>Design Principles:</h3>
+                                            <p>Based on the Needs Statement, the prototype must adhere to these core design principles:</p>
+                                            <ul>
+                                                <li><strong>Ergonomic Cursor Control:</strong> The device must include a 3D-printed attachment that fits securely over the existing mouse, altering its shape so it can be comfortably moved by a residual limb rather than a hand.</li>
+                                                <li><strong>Distributed Input (Foot Clicking):</strong> The standard Mouse 1 and Mouse 2 inputs must be physically extended away from the mouse body and re-routed to a foot-accessible location.</li>
+                                                <li><strong>Angled Accessibility:</strong> The foot switches must be mounted on an angled surface (a ramp) to match the natural resting angle of a user's foot, preventing ankle strain during use.</li>
+                                            </ul>
+
+                                            <h3>Measuring Success:</h3>
+                                            <ul>
+                                                <li><strong>Quantitative:</strong> The extended foot switches successfully register >95% of intended clicks during use. The 3D-printed mouse attachment fits securely without popping off during rapid movement.</li>
+                                                <li><strong>Qualitative:</strong> The user (or simulated user via folded-elbow testing) reports comfortable ergonomics when moving the mouse attachment and pressing the foot ramp over a test session.</li>
+                                            </ul>
+
+                                            <h3>Pivot Strategy:</h3>
+                                            <ul>
+                                                <li><strong>Addressing Print Time & Wear:</strong> The current 3D-printed foot ramp takes 5+ hours to print, and laying the circuit board directly on top of it leaves the buttons exposed to rapid wear and tear from shoes. If the exposed buttons begin to fail or if rapid iteration is blocked by long print times, we will pivot our CAD design away from the large solid ramp and toward smaller, modular foot pedals that enclose and protect the switches.</li>
+                                                <li><strong>Addressing Fit:</strong> If the over-mouse attachment slips or causes friction, we will pivot to modifying the inner tolerances or changing the CAM infill settings for a better weight distribution.</li>
+                                            </ul>
+
+                                            <h2>4. Initial Design Overview</h2>
+                                            <p>Our initial design process focuses on a rapid proof-of-concept to separate cursor movement from the clicking mechanism:</p>
+                                            <ul>
+                                                <li><strong>Feature 1: The Over-Mouse Attachment Shell</strong>
+                                                    <ul>
+                                                        <li><em>Design:</em> A 3D-printed ergonomic shell designed to slip directly over a standard wireless mouse to test size and fit.</li>
+                                                        <li><em>Addressing the Need:</em> Standard mice force users to grip with fingers. This attachment alters the topography of the mouse, creating a broader, smoother surface specifically shaped to be pushed by an elbow or residual limb.</li>
+                                                    </ul>
+                                                </li>
+                                                <li><strong>Feature 2: The Circuit Board Foot Ramp</strong>
+                                                    <ul>
+                                                        <li><em>Design:</em> We bypassed the Left and Right click microswitches on the mouse and extended the wiring down to a separate circuit board. This board is laid on top of a custom 3D-printed, angled wedge (ramp).</li>
+                                                        <li><em>Addressing the Need:</em> This addresses the "Distributed Input" principle. By relocating the Mouse 1 and Mouse 2 buttons to an angled floor ramp, the user can easily trigger clicks with their foot while their upper limb focuses entirely on aiming and cursor movement.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+
+                                            <h2>Prototyping & Iteration Cycles</h2>
+
+                                            <div class="cycle">
+                                                <h3>Cycle 1: Baseline Prototype (PLA)</h3>
+                                                <ul>
+                                                    <li><strong>Action:</strong> We fabricated our initial baseline components in PLA. First, a white handpiece designed so a user could control the mouse without full finger/hand dexterity. Second, an original black footmount to house left/right click buttons recycled from past engineering projects (each housed on a 30x70mm motherboard). We also printed a black base for the mouse bottom that houses the motherboard.</li>
+                                                    <li><strong>Testing Methodology:</strong> We drop-tested the handpiece from desk height (simulating a normal accident) and tested its connection to the mouse motherboard base. We tested the footmount for usability.</li>
+                                                    <li><strong>Results:</strong> The white handpiece passed the drop test but was too small for an adult and lacked the tolerance to fit the mouse bottom. The first black footmount print came out well physically, but it was not effective in practice because the wires were exposed and in the user's way.</li>
+                                                </ul>
+                                                <img src="wire-mess.jpg" alt="Handful of messy wires from the first footmount prototype" width="600">
+                                            </div>
+
+                                            <div class="cycle">
+                                                <h3>Cycle 2: CAD Change</h3>
+                                                <ul>
+                                                    <li><strong>Action:</strong> Based on Cycle 1, we made major CAD redesigns. For the handpiece, we scaled up the size for an adult and adjusted the mating tolerances, printing this second version in red PLA. For the footmount, we added a second cutout under each slot and designed two new holes to allow the wires to run internally through the mount, printing this second version in yellow PLA.</li>
+                                                    <li><strong>Testing Methodology:</strong> Repeated drop test, assembly fit test, and wire-routing test.</li>
+                                                    <li><strong>Results:</strong> The second (red) handpiece print was a good size but still didn't have quite enough tolerance to fit perfectly. However, the yellow footmount CAD change was a massive success; the holes allowed the wires to run properly out of the user's way, achieving its goal perfectly.</li>
+                                                </ul>
+                                                <img src="cad-shot.jpg" alt="CAD software used to redesign the 3D printed mouse attachments" width="600">
+                                            </div>
+
+                                            <div class="cycle">
+                                                <h3>Cycle 3: CAM Change (Slicer Settings)</h3>
+                                                <ul>
+                                                    <li><strong>Action:</strong> To resolve the lingering tolerance issues on the handpiece without redrawing the CAD, we adjusted the CAM (slicer) settings (e.g., XY hole compensation/layer tolerances) and printed a third version in yellow PLA. We also optimized the CAM support structures to ensure the new wire-routing holes in the yellow footmount printed cleanly.</li>
+                                                    <li><strong>Testing Methodology:</strong> Final fit and assembly test.</li>
+                                                    <li><strong>Results:</strong> The CAM changes made the third (yellow) handpiece print great; it fit the mouse bottom perfectly and passed the drop tests. However, during full assembly, we discovered the black bottom piece of the mouse (housing the main electronics) had small, fragile clips that were too weak in standard PLA.</li>
+                                                </ul>
+                                                <img src="desk-setup.jpg" alt="The connected 3D printed handpiece and footmount system" width="600">
+                                            </div>
+
+                                            <div class="cycle">
+                                                <h3>Cycle 4: Material Change</h3>
+                                                <ul>
+                                                    <li><strong>Action:</strong> Because the weakest component turned out to be the mouse bottom housing, we changed the design material. We used the exact same CAD design from Cycle 1 but printed a 2nd prototype of the mouse bottom in white PETG filament instead of black PLA.</li>
+                                                    <li><strong>Testing Methodology:</strong> Assembly stress-test on the fragile components.</li>
+                                                    <li><strong>Results:</strong> The white PETG print came out great. It was significantly stronger and more flexible, successfully protecting the motherboard and allowing assembly without the clips snapping.</li>
+                                                </ul>
+                                                <img src="soldering-iron.jpg" alt="Soldering station used to bypass the mouse microswitches" width="600">
+                                            </div>
+
+                                            <h2>Step 12: Final Write-Up & Reflection</h2>
+                                            <ul>
+                                                <li><strong>Most Impactful Change:</strong> The CAD change (Cycle 2) made the biggest difference in functionality. Adding the internal wire-routing cutouts to the yellow footmount transformed it from a messy, ineffective prototype into a highly usable tool.</li>
+                                                <li><strong>Most Learned:</strong> We learned the most from the Material change (Cycle 4). It demonstrated that a perfectly good CAD design can still fail if the material (PLA) is too brittle for delicate electronic housing, requiring a pivot to tougher materials like PETG (our final white mouse bottom).</li>
+                                                <li><strong>Defining & Measuring Success:</strong> We defined quantitative success through pass/fail physical stress testing (desk-height drop tests) and dimensional accuracy (successfully mating the 3D printed handpieces to the mouse bottoms). Qualitative success was measured by ensuring the wire management kept cables out of the user's way.</li>
+                                                <li><strong>Pivots:</strong> We pivoted our design based on physical findings: we pivoted the footmount from a solid block to a hollow routed design to hide wires, and we pivoted our manufacturing material from PLA to PETG when the structural integrity of the electronic housing failed.</li>
+                                            </ul>
                                     </div>
                                         Close Window
                                     </button>
@@ -549,6 +649,8 @@
         
                                     <h5 class="fw-bold mt-4">Review of Existing Open-Source Solutions</h5>
                                     <p>To better understand the current landscape of accessible gaming hardware, our team researched and fabricated existing open-source solutions to test their physical mechanisms and key features.</p>
+
+
         
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
