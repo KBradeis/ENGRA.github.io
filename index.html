@@ -610,6 +610,148 @@
                                                 <li><strong>Pivots:</strong> We pivoted our design based on physical findings: we pivoted the footmount from a solid block to a hollow routed design to hide wires, and we pivoted our manufacturing material from PLA to PETG when the structural integrity of the electronic housing failed.</li>
                                             </ul>
                                     </div>
+
+                                    <!DOCTYPE html>
+                        <html lang="en">
+                        <head>
+                            <meta charset="utf-8" />
+                            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                            <title>Build Guide: Accessible Mouse Setup</title>
+                            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+                            <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+                            
+                            <style>
+                                body { font-family: 'Plus Jakarta Sans', sans-serif; padding-top: 56px; }
+                                .step-number { background-color: #0d6efd; color: white; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; flex-shrink: 0; }
+                                .hero-img { width: 100%; max-height: 500px; object-fit: cover; border-radius: 1rem; }
+                            </style>
+                        </head>
+                        <body class="d-flex flex-column h-100 bg-light">
+
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                <div class="container px-5">
+                                    <a class="navbar-brand fw-bold" href="index.html">Gerardo Rios</a>
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+                                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><h6 class="dropdown-header">Spring 2026</h6></li>
+                                                    <li><a class="dropdown-item" href="projects.html"><strong>Project 1:</strong> 3D Printing</a></li>
+                                                    <li><a class="dropdown-item" href="project-2.html"><strong>Project 2:</strong> Remix & CAD</a></li>
+                                                    <li><a class="dropdown-item" href="project-3.html"><strong>Project 3:</strong> Form & Fit (Robot)</a></li>
+                                                    <li><a class="dropdown-item" href="project-4.html"><strong>Project 4:</strong> Assistive Tech</a></li>
+                                                    <li><hr class="dropdown-divider"></li>
+                                                    <li><a class="dropdown-item" href="project-5.html"><strong>Project 5:</strong> Capstone (Stage 1)</a></li>
+                                                    <li><a class="dropdown-item" href="project-5-2.html"><strong>Project 5:</strong> Capstone (Stage 2 & Final)</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <section class="py-5">
+                                <div class="container px-5 my-5">
+                                    
+                                    <div class="text-center mb-5">
+                                        <h1 class="fw-bolder display-5">Open-Source Build Guide</h1>
+                                        <p class="lead fw-normal text-muted mb-4">Accessible Gaming Mouse & Foot Pedal Setup</p>
+                                        
+                                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="shadow-lg border" style="aspect-ratio: 16 / 9; overflow: hidden; border-radius: 1rem; position: relative; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#heroModal" title="Click to enlarge">
+                                    <img src="assets/hero-image.jpg" alt="Final Assembled Project" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+                                </div>
+                                <p class="text-muted mt-3 small fst-italic">Final assembly showing the handpiece interface and footmount pedals. Click to enlarge.</p>
+                            </div>
+                        </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card bg-white shadow-sm border-0 mb-5">
+                                        <div class="card-body p-5 text-center">
+                                            <h4 class="fw-bold mb-4">Required 3D Print Files</h4>
+                                            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                                <a href="assets/Handpiece v3.stl" download class="btn btn-primary shadow-sm px-4">
+                                                    <i class="bi bi-download me-2"></i> Download Handpiece STL
+                                                </a>
+                                                <a href="assets/Footmount_v3.stl" download class="btn btn-primary shadow-sm px-4">
+                                                    <i class="bi bi-download me-2"></i> Download Footmount STL
+                                                </a>
+                                            </div>
+                                            <p class="text-muted small mt-3 mb-0">*The mouse bottom is an open-source Bambu file. <a href="https://makerworld.com/en/models/13716" target="_blank">Link to Bambu original here</a>.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card bg-white shadow-sm border-0 mb-5">
+                                        <div class="card-body p-4 p-md-5">
+                                            <h4 class="fw-bold mb-3 text-center"><i class="bi bi-layers me-2 text-primary"></i>Recommended Slicer Orientation</h4>
+                                            <div class="text-center mb-4">
+                                                <span class="badge bg-secondary px-3 py-2 fw-normal fs-6">
+                                                    <strong>Global Settings:</strong> Prusa MK4 (0.4mm nozzle) &bull; 0.20mm SPEED &bull; PLA &bull; 15% Infill
+                                                </span>
+                                            </div>
+                                            <div class="row g-4">
+                                                <div class="col-md-6 text-center">
+                                                    <img src="assets/hand-slice.png" alt="Handpiece Slicer View" class="img-fluid rounded shadow-sm mb-3 border">
+                                                    <h6 class="fw-bold">Handpiece (v3)</h6>
+                                                    <ul class="small text-muted d-inline-block text-start mb-0">
+                                                        <li><strong>Time:</strong> 2h 49m</li>
+                                                        <li><strong>Material:</strong> 104.46g (35.03m)</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-md-6 text-center">
+                                                    <img src="assets/foot-slice.png" alt="Footmount Slicer View" class="img-fluid rounded shadow-sm mb-3 border">
+                                                    <h6 class="fw-bold">Footmount (v3)</h6>
+                                                    <ul class="small text-muted d-inline-block text-start mb-0">
+                                                        <li><strong>Time:</strong> 3h 4m</li>
+                                                        <li><strong>Material:</strong> 140.50g (47.11m)</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row gx-5">
+                                        <div class="col-lg-4 mb-5 mb-lg-0">
+                                            <div class="sticky-top" style="top: 100px;">
+                                                <div class="card bg-white shadow-sm border-0 mb-4">
+                                                    <div class="card-body p-4">
+                                                        <h5 class="fw-bold text-primary mb-3"><i class="bi bi-shield-check me-2"></i>Durability Specs</h5>
+                                                        <h6 class="fw-bold mb-1 small text-dark">Handpiece:</h6>
+                                                        <p class="small text-muted mb-3">500N Top-down (no break), 400N side wall (break), survived stair drop test.</p>
+                                                        <h6 class="fw-bold mb-1 small text-dark">Mousepiece:</h6>
+                                                        <p class="small text-muted mb-0">50N battery section limit. Housing is durable but not intended for heavy force.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card bg-white shadow-sm border-0 mb-4">
+                                                    <div class="card-body p-4">
+                                                        <h5 class="fw-bold text-primary mb-3"><i class="bi bi-list-check me-2"></i>Bill of Materials</h5>
+                                                        <ul class="small text-muted mb-0" style="line-height: 1.8;">
+                                                            <li>1x <a href="https://us.store.bambulab.com/products/wireless-mouse-components-kit-002" target="_blank" class="text-decoration-none">Bambu Mouse Kit <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                                            <li>2x <a href="https://www.amazon.com/s?k=pcb+prototype+board+kit" target="_blank" class="text-decoration-none">PCB Fiber Boards <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                                            <li>2x <a href="https://www.amazon.com/s?k=microswitch+assortment+kit" target="_blank" class="text-decoration-none">Microswitches <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                                            <li><a href="https://www.amazon.com/s?k=hookup+wire+kit+22awg" target="_blank" class="text-decoration-none">22 AWG Wire <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                                            <li><a href="https://www.amazon.com/s?k=soldering+iron+starter+kit" target="_blank" class="text-decoration-none">Soldering Kit <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                                            <li><a href="https://www.amazon.com/s?k=PETG+filament" target="_blank" class="text-decoration-none">PLA/PETG Filament <i class="bi bi-box-arrow-up-right"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-8">
+                                            
+                                            <div class="alert alert-warning border-0 shadow-sm mb-4 p-4">
+                                                <div class="d-flex">
+
                                         Close Window
                                     </button>
                                 </div>
