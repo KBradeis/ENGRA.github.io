@@ -1,752 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Engineering portfolio of Aydin Kijjambu, Brandeis University: 3D printing, CAD, laser cutting and assistive technology projects." />
-        <meta name="author" content="Aydin Kijjambu" />
-        <title>Aydin Kijjambu ENGRA Website</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-        <style>
-           .rotate-90{
-           transform: rotate(90deg);
-          }
-          
-          .rotate-180 {
-            transform: rotate(180deg);
-          }
-          
-          .rotate-270 {
-            transform: rotate(270deg);
-          } 
-
-          .clickable-img {
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            }
-         .clickable-img.zoomed {
-            transform: scale(1.8);
-            position: relative;
-            z-index: 1055;
-        }
-    </style>    
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">Aydin Kijjambu - ENGRA Website</a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact Info</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">ENGRA Website</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Aydin Kijjambu - Student at Brandeis - ENGRA Portfolio</p>
-            </div>
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project 1 Photos/Prusa Pic.jpg" alt="Prusa 3D printer in the engineering lab" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project 2 Photos/TinkerCad Model.jpg" alt="Essentials organizer modeled in TinkerCad" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project 3 Photos/IMG_5980.jpg" alt="Assembled laser-cut wooden robot chassis labeled ENGR 11A Project 3" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project 4 Photos/IMG_0383.jpg" alt="Finished white and orange prosthetic hand" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Project 5 Photos/IMG_6614.jpg" alt="Green 3D printed one-handed attachment on an Xbox controller" />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/coming soon photo.jpg" alt="Project coming soon" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead"> This website is where I will be placing any work I have done from this class and work on any going passion projects that I want to share. </p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-                </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Your Website 2026</small></div>
-        </div>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Project 1: Building with Prusa</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">This was a cool starter project. I enjoyed relearning how to use 3D printers and learning about using 2 colors on one print. One thing I’m still curious about is how the 3D printer figures out how much space it leaves between the nozzle and print plate. I hope learning how to calibrate this isn’t too much of a hassle.</p>
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 1 Photos/NameTag Mistake.jpg" alt="Name tag keychain in PrusaSlicer set up as a single color after the file settings were lost" />
-                                    <p class="mb-4">I learned that depending on how you upload the file the pre-set conditions/settings could be lost. I have never run into this problem so me and Ian had to troubleshoot and brainstorm on what we think the problem is. I had inserted the print by going to file and importing it into Prusa. If I had dragged it into Prusa instead I would have never run into this problem.</p>
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 1 Photos/Proper Name Tag.jpg" alt="Name tag keychain correctly set up for a two-color print in PrusaSlicer" />
-                                    <p class="mb-4">This is what it should look like if you drag the file into Prusa. Now the Keychain will come out with two different colors rather than one. I want to learn how to manually put multiple colors on any prints that I want to make.</p>
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 1 Photos/StressTest.jpg" alt="Purple stress-test print with overhangs, bridges and holes" />
-                                    <p class="mb-4">This is what my stress test looks like. I was able to make this a small print. Through this print I was able to learn how to use the tools on Prusa slicers. I was able to test every limit. This print might have gone through over extrusion making certain details look messy and hard to read.We can’t see any words or specific details on the piece I printed.</p>
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 1 Photos/Help Print.jpg" alt="Green 3D printed tactile communication sign" />
-                                    <p class="mb-4">This was my open source assistive device. I chose this since I wanted a tool that could help people communicate. In the photo you can see a tool used for people who are visually impaired communicate with others through a tactile language. I think the documentation for this print was very detailed and easy to understand.I don’t think I can give back any immediate suggestions on what to improve.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> Project 2: Using TinkerCad and Onshape</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <!-- Portfolio Modal - Text-->
-                                    <img class="img-fluid rotate-90" src="assets/img/portfolio/Project 2 Photos/Project 2 Ideas.JPG" alt="Sketched ideas for a room organizer for everyday essentials" />
-                                    <p class="mb-4">I didn’t know what to do or where to start so I decided to do something that would impact me positively. So I wrote things that would help make my room more organized. Starting with my everyday essentials, my phone, wallet, keys , and watch. I decided to look for something that could store them and manage the wires while I charge my phone at the same time.</p>
-                                    <img class="img-fluid " src="assets/img/portfolio/Project 2 Photos/TinkerCad Model.jpg" alt="Essentials organizer modeled in TinkerCad" />
-                                    <img class="img-fluid " src="assets/img/portfolio/Project 2 Photos/Prusa Model.jpg" alt="Organizer model with supports in PrusaSlicer" />
-                                    <p class="mb-4">This was what it looked like in TinkerCad and Prusa. I decided to add support to prevent anything from going wrong. Overall I liked how firm the structure is, I won’t have to worry about it breaking if it falls down. Working in TinkerCad was something I haven’t done in a while so I had to shake off some rust.</p>
-                                    <img class="img-fluid" src="assets/img/portfolio/Project 2 Photos/Project 2 Tips for improvement.JPG" alt="Notes on how to improve the first organizer print" />
-                                    <img class="img-fluid" src="assets/img/portfolio/Project 2 Photos/Proj 2 first print.JPG" alt="First printed draft of the essentials organizer" />
-                                    <p class="mb-4">Here’s the first print draft. It needs to be bigger to fit in all my essentials. I think I could also improve the wire holder that is currently on this design. Overall I would rate it a 2 on a scale of 1 - 5 based on its utility.I like the first design.</p>
-                                    <p class="mb-4"> </p>
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 2 Photos/Onshape Model.png" alt="Box-shaped organizer redesigned in Onshape" />
-                                    <p class="mb-4">In Onshape this was what I designed. I enjoyed relearning how to use all my tools. I think I might work on this design to make it more intune with whatever I want in my dorm room. My favorite part about this project is that I can do whatever I want as long as I can imagine it and customize it to my needs.</p>
-                                    <img class="img-fluid" src="assets/img/portfolio/Project 2 Photos/Proj 2 Second Print.JPG" alt="Second print of the organizer" />
-                                    <p class="mb-4">Reflection:
-                                        Overall this was a cool project. I realised the problem wasn’t the prints at all. It seemed to be the size that I made them in the Prusa slicer. Which means both of my ideas could have worked if they had been made bigger before they were printed. Working on tinkercad is a bit harder when making things isn’t ideal. It is a bit clunky since I have to get shapes extremely close to each other to connect them yet it still might end up with spaces in between them making it hard to print then. While Onshape is a bit better it’s a bit more challenging to use since nothing is intuitive, everything has to be found out.
-                                        </p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Project 3: 3D printing and Laser Cutting</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <p class="mb-4"></p>
-                                    <!-- Portfolio Modal - Text-->
-                                    <img class="img-fluid rotate-90 clickable-img" src="assets/img/portfolio/Project 3 Photos/IMG_5903.jpg" alt="Soldering the robot circuit board" />
-                                    <p class="mb-4">During the beginning of class I partnered with Ian. He and I got along instantly. He is a computer science and math major. I previously had soldered in Highschool for my electrical class. It wasn’t something that I still remembered how to do properly.</p>
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 3 Photos/IMG_5906.jpg" alt="Soldering components onto the blue robot circuit board" />
-                                    <p class="mb-4">I enjoyed relearning how to solder. It was a cool experience that showed me how something works. I might start trying to do little personal projects for fun in my own free time. I think the only thing that I need to get better at is making better joints and not getting the smoke in my face.</p>
-                                    <img class="img-fluid " src="assets/img/portfolio/Project 3 Photos/IMG_5914.jpg" alt="Assembled robot circuit board with wheels and motors" />
-
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 3 Photos/Screenshot 2026-03-03 at 6.20.04 PM.png" alt="CAD model of the robot chassis" />
-                                    <p class="mb-4">Ian started most of the chassis structure in which all we had to do was rearrange the measurements so that it’s accurate to the model we have in class. I’ll probably end up doing most of the editing for our next version based on whatever’s wrong with this model we currently have.</p>
-
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 3 Photos/Screenshot 2026-02-27 at 10.24.49 AM.png" alt="Robot chassis parts oriented for printing in the slicer" />
-                                    <p class="mb-4">This is what it looks like when we are trying to print its. We place it in this orientation to make sure that everything is printed out correctly. Hoping that we don’t have to worry about the print getting messed up. We also changed the infill to be more so that it is more durable.</p>
-                                    
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 3 Photos/Screenshot 2026-03-21 at 3.43.45 PM.png" alt="Wood chassis design in LightBurn for laser cutting" />
-                                    <p class="mb-4">This is my wood design for lightburn. Ian helped me figure out how to make it. The only thing that this might be lacking is the right measurements in terms of the width. I liked trying out all the features. I’m also very curious how difficult it is to make the joints manually instead of using the automatic feature.</p>
-
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project 3 Photos/IMG_5978.jpg" alt="Laser-cut wood sheet with the robot chassis parts" />
-                                    <p class="mb-4">This is what our final Laser cut print looked like once everything was done. Ian decided that he could add some personal designs like a number plate. I think we did a good job with what we have going on.</p>
-
-                                    
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Project 4: Prosthetic Hand</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Project 4 Photos/IMG_0360.jpg" alt="3D printed prosthetic hand with multicolored fingers" />
-                                    <!-- Portfolio Modal - Text-->
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 4 Photos/IMG_0375.jpg" alt="Prosthetic hand print being tested for tension" />
-                                    <p class="mb-4">This is our main print being tested to see how much tension it can handle. This has been an interesting project since it can be customized to whatever someone might need which makes it very interesting. I think that I’m very enthusiastic about the idea of making something that would significantly make someone’s life easier.</p>
-                                    
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 4 Photos/IMG_0360.jpg" alt="3D printed prosthetic hand with multicolored fingers" />
-                                    <p class="mb-4">Figuring out how to access all the files wasn’t challenging for me since I knew what the final product would look like and what I wanted to do. I was able to easily navigate the website while looking at the tutorials and videos. I think this is very helpful to beginners who are starting out. If I were to make the website I’d try to use more simple language everywhere and make sure that the important steps like devices and community are in different tabs.</p>
-
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 4 Photos/IMG_0376.jpg" alt="Prosthetic hand with straps and wrist cuff attached" />
-                                    <p class="mb-4"> Me and my partner Ben have realised that the hand requires a significant amount for you to hold onto something. This is something that me and my partner want to try and work on so it is no longer a strenuous thing for users. We might do that by lengthening the wrist compartment. We also wanted to make the hand compartment for people with above average hand sizes.</p>
-                                    
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 4 Photos/IMG_0377.jpg" alt="Assembling the parts of a smaller prosthetic hand" />
-                                    <p class="mb-4"> Contribute Back Step
-                                        The most challenging part of the documentation to follow was looking at the STL files since all of them just seem to be randomly organized when I downloaded them onto my drive. I would organize these pieces in groups of how they should be printed for the user if they want to follow that way. Another thing that I thought was hard to navigate was working with the whipple tree and having to put the string through the entire hand. Ben and I had people trying to use our method of using a solder to put things inside the hand. Making it easier for everyone.</p>
-                                    <img class="img-fluid clickable-img" src="assets/img/portfolio/Project 4 Photos/IMG_0383.jpg" alt="Finished white and orange prosthetic hand" />
-                                    <p class="mb-4"> For our partner modification we made the hand bigger so that people with bigger than average upper limb difference. Or if you needed a bigger hand to do something than that exists.</p>
-                                    <p class="mb-4"> Reflection: 
-                                        I think that Open Source AT is important because it gives people the opportunity to help one another and improve any designs. This gives the people with disabilities access to the direct source and make any modifications that they see are fit. It also makes people able to get the tools that they need for their day to day life.</p>
-                                    <p class="mb-4">Bridge to Capstone:
-                                        This project helped me learn that there is an unmet need of people with disabilities that don’t have access to your everyday things that people will never normally think of. My group and I are working on gaming prosthetics for people with maybe upper limb disabilities and starting with this project was very helpful. This is something that I never really thought was important but then I saw some that said technology isn’t being used properly if people with disabilities can’t enjoy it.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Project 5: Assistive Gaming Device</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                </div>
-                                <ul class="list-unstyled mb-0 small">
-                                    <li class="mb-2"><strong>Gerardo Rios</strong> - UX Researcher</li>                                    
-                                    <li class="mb-2"><strong>Benjamin Kotzen</strong> - Research and Development</li>
-                                    <li class="mb-2"><strong>Mouse Hardwick</strong> - Creative Director</li>
-                                    <li class="mb-2"><strong>Aydin Kijjambu</strong> - Logistics Manager</li>
-                                </ul>
-                                <h5> Background Research</h5>
-                                    <p>There are an estimated 33+ million gamers with disabilities in the US alone, many of whom face physical barriers to play.</p>
-                                    <p>Existing solutions for accessible gaming are widely varied and often hard to access due to very high price points. Additionally, many current market solutions focus primarily on larger buttons or easier-to-press switches. While helpful for some, this design philosophy inadvertently limits gamers with physical disabilities to slower-paced and simpler games.</p>
-                                    <p>Slower-paced games allow for simpler inputs, but more complicated, competitive games do not. For example, a fast-paced first-person shooter could require a competitive player to make up to 10 actions per second, or roughly 500 to 600 actions per minute (APM) <a href="https://www.nbcnews.com/technolog/how-fast-fast-some-pro-gamers-make-10-moves-second-8c11422946" target="_blank" class="text-decoration-none">(NBC News)</a>.</p>
-                                    <p>Ultimately, while an individual's brain may be able to make lightning-quick tactical decisions, they are entirely bottlenecked by poor physical accessibility in the hardware space.</p>
-        
-                                    <h5 class="fw-bold mt-4">Customer Profile: Duncan</h5>
-                                    <p>Duncan is a junior in high school who loves everything about video games. After a long day of classes, he usually spends his evenings hanging out with his friends in Discord servers and playing competitive multiplayer matches online. However, as an individual with an upper limb difference, Duncan struggles to compete with his able-bodied friends in fast-paced, first-person shooter (FPS) games that require quick, complex controller inputs. You will typically find him seeking out custom keybinds, testing accessibility workarounds, or searching forums for modified gear that can help level the playing field.</p>
-        
-                                    <h5 class="fw-bold mt-4">Review of Existing Open-Source Solutions</h5>
-                                    <p>To better understand the current landscape of accessible gaming hardware, our team researched and fabricated existing open-source solutions to test their physical mechanisms and key features.</p>
-
-                                    
-                                    <h1>Design Project #5 Stage 2: Prototyping and Testing</h1>
-
-                                            <img src="assets/img/portfolio/Project 5 Photos/All versions of mouse.jpg" alt="Chronological lineup of 3D printed handpieces and footmounts" width="600">
-
-                                            <h2>1 & 2. Needs Statement</h2>
-                                            <p><em>Based on the IBM Design Thinking Toolkit</em></p>
-                                            <ul>
-                                                <li><strong>Who:</strong> Individuals with upper limb differences, specifically those utilizing a residual limb or "knub" for computer interaction.</li>
-                                                <li><strong>What they need to do:</strong> Comfortably maneuver a computer cursor using their upper limb, while executing Left (Mouse 1) and Right (Mouse 2) clicks completely hands-free via foot switches.</li>
-                                                <li><strong>Why (The Insight):</strong> Standard computer mice are ergonomically designed for fingers and hands, making cursor movement difficult and clicking nearly impossible for this demographic. Separating the movement (via an ergonomic mouse attachment) from the clicking (via extended foot switches) allows for seamless, strain-free gaming and PC navigation.</li>
-                                            </ul>
-
-                                            <h2>3. Design Principles & Success Criteria</h2>
-                                            <h3>Design Principles:</h3>
-                                            <p>Based on the Needs Statement, the prototype must adhere to these core design principles:</p>
-                                            <ul>
-                                                <li><strong>Ergonomic Cursor Control:</strong> The device must include a 3D-printed attachment that fits securely over the existing mouse, altering its shape so it can be comfortably moved by a residual limb rather than a hand.</li>
-                                                <li><strong>Distributed Input (Foot Clicking):</strong> The standard Mouse 1 and Mouse 2 inputs must be physically extended away from the mouse body and re-routed to a foot-accessible location.</li>
-                                                <li><strong>Angled Accessibility:</strong> The foot switches must be mounted on an angled surface (a ramp) to match the natural resting angle of a user's foot, preventing ankle strain during use.</li>
-                                            </ul>
-
-                                            <h3>Measuring Success:</h3>
-                                            <ul>
-                                                <li><strong>Quantitative:</strong> The extended foot switches successfully register >95% of intended clicks during use. The 3D-printed mouse attachment fits securely without popping off during rapid movement.</li>
-                                                <li><strong>Qualitative:</strong> The user (or simulated user via folded-elbow testing) reports comfortable ergonomics when moving the mouse attachment and pressing the foot ramp over a test session.</li>
-                                            </ul>
-
-                                            <h3>Pivot Strategy:</h3>
-                                            <ul>
-                                                <li><strong>Addressing Print Time & Wear:</strong> The current 3D-printed foot ramp takes 5+ hours to print, and laying the circuit board directly on top of it leaves the buttons exposed to rapid wear and tear from shoes. If the exposed buttons begin to fail or if rapid iteration is blocked by long print times, we will pivot our CAD design away from the large solid ramp and toward smaller, modular foot pedals that enclose and protect the switches.</li>
-                                                <li><strong>Addressing Fit:</strong> If the over-mouse attachment slips or causes friction, we will pivot to modifying the inner tolerances or changing the CAM infill settings for a better weight distribution.</li>
-                                            </ul>
-
-                                            <h2>4. Initial Design Overview</h2>
-                                            <p>Our initial design process focuses on a rapid proof-of-concept to separate cursor movement from the clicking mechanism:</p>
-                                            <ul>
-                                                <li><strong>Feature 1: The Over-Mouse Attachment Shell</strong>
-                                                    <ul>
-                                                        <li><em>Design:</em> A 3D-printed ergonomic shell designed to slip directly over a standard wireless mouse to test size and fit.</li>
-                                                        <li><em>Addressing the Need:</em> Standard mice force users to grip with fingers. This attachment alters the topography of the mouse, creating a broader, smoother surface specifically shaped to be pushed by an elbow or residual limb.</li>
-                                                    </ul>
-                                                </li>
-                                                <li><strong>Feature 2: The Circuit Board Foot Ramp</strong>
-                                                    <ul>
-                                                        <li><em>Design:</em> We bypassed the Left and Right click microswitches on the mouse and extended the wiring down to a separate circuit board. This board is laid on top of a custom 3D-printed, angled wedge (ramp).</li>
-                                                        <li><em>Addressing the Need:</em> This addresses the "Distributed Input" principle. By relocating the Mouse 1 and Mouse 2 buttons to an angled floor ramp, the user can easily trigger clicks with their foot while their upper limb focuses entirely on aiming and cursor movement.</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-
-                                            <h2>Prototyping & Iteration Cycles</h2>
-
-                                            <div class="cycle">
-                                                <h3>Cycle 1: Baseline Prototype (PLA)</h3>
-                                                <ul>
-                                                    <li><strong>Action:</strong> We fabricated our initial baseline components in PLA. First, a white handpiece designed so a user could control the mouse without full finger/hand dexterity. Second, an original black footmount to house left/right click buttons recycled from past engineering projects (each housed on a 30x70mm motherboard). We also printed a black base for the mouse bottom that houses the motherboard.</li>
-                                                    <li><strong>Testing Methodology:</strong> We drop-tested the handpiece from desk height (simulating a normal accident) and tested its connection to the mouse motherboard base. We tested the footmount for usability.</li>
-                                                    <li><strong>Results:</strong> The white handpiece passed the drop test but was too small for an adult and lacked the tolerance to fit the mouse bottom. The first black footmount print came out well physically, but it was not effective in practice because the wires were exposed and in the user's way.</li>
-                                                </ul>
-                                                <img src="assets/img/portfolio/Project 5 Photos/Screenshot 2026-05-03 at 11.59.51 AM.jpg" alt="Handful of messy wires from the first footmount prototype" width="600">
-                                            </div>
-
-                                            <div class="cycle">
-                                                <h3>Cycle 2: CAD Change</h3>
-                                                <ul>
-                                                    <li><strong>Action:</strong> Based on Cycle 1, we made major CAD redesigns. For the handpiece, we scaled up the size for an adult and adjusted the mating tolerances, printing this second version in red PLA. For the footmount, we added a second cutout under each slot and designed two new holes to allow the wires to run internally through the mount, printing this second version in yellow PLA.</li>
-                                                    <li><strong>Testing Methodology:</strong> Repeated drop test, assembly fit test, and wire-routing test.</li>
-                                                    <li><strong>Results:</strong> The second (red) handpiece print was a good size but still didn't have quite enough tolerance to fit perfectly. However, the yellow footmount CAD change was a massive success; the holes allowed the wires to run properly out of the user's way, achieving its goal perfectly.</li>
-                                                </ul>
-                                                <img src="assets/img/portfolio/Project 5 Photos/Screenshot 2026-05-03 at 12.00.00 PM.jpg" alt="CAD software used to redesign the 3D printed mouse attachments" width="600">
-                                            </div>
-
-                                            <div class="cycle">
-                                                <h3>Cycle 3: CAM Change (Slicer Settings)</h3>
-                                                <ul>
-                                                    <li><strong>Action:</strong> To resolve the lingering tolerance issues on the handpiece without redrawing the CAD, we adjusted the CAM (slicer) settings (e.g., XY hole compensation/layer tolerances) and printed a third version in yellow PLA. We also optimized the CAM support structures to ensure the new wire-routing holes in the yellow footmount printed cleanly.</li>
-                                                    <li><strong>Testing Methodology:</strong> Final fit and assembly test.</li>
-                                                    <li><strong>Results:</strong> The CAM changes made the third (yellow) handpiece print great; it fit the mouse bottom perfectly and passed the drop tests. However, during full assembly, we discovered the black bottom piece of the mouse (housing the main electronics) had small, fragile clips that were too weak in standard PLA.</li>
-                                                </ul>
-                                                <img src="assets/img/portfolio/Project 5 Photos/Ben working with mouse.JPG" alt="The connected 3D printed handpiece and footmount system" width="600">
-                                            </div>
-
-                                            <div class="cycle">
-                                                <h3>Cycle 4: Material Change</h3>
-                                                <ul>
-                                                    <li><strong>Action:</strong> Because the weakest component turned out to be the mouse bottom housing, we changed the design material. We used the exact same CAD design from Cycle 1 but printed a 2nd prototype of the mouse bottom in white PETG filament instead of black PLA.</li>
-                                                    <li><strong>Testing Methodology:</strong> Assembly stress-test on the fragile components.</li>
-                                                    <li><strong>Results:</strong> The white PETG print came out great. It was significantly stronger and more flexible, successfully protecting the motherboard and allowing assembly without the clips snapping.</li>
-                                                </ul>
-                                                <img src="assets/img/portfolio/Project 5 Photos/Screenshot 2026-05-03 at 12.00.25 PM.jpg" alt="Soldering station used to bypass the mouse microswitches" width="600">
-                                            </div>
-
-                                            <h2>Step 12: Final Write-Up & Reflection</h2>
-                                            <ul>
-                                                <li><strong> I personally think I enjoyed this project since I was able to make something that I didn’t initially believe was possible.  I enjoyed starting with a shitty project then working my way into something that is a bit more useful. This whole class changed my mindset when it comes to making things from a consumer to a creator mindset focused on making sure that my target audience needs are met. I got to get the perspective of what the people who sell us things have to go through which wasn’t bad. </strong></li>
-                                                <li><strong>Most Impactful Change:</strong> The CAD change (Cycle 2) made the biggest difference in functionality. Adding the internal wire-routing cutouts to the yellow footmount transformed it from a messy, ineffective prototype into a highly usable tool.</li>
-                                                <li><strong>Most Learned:</strong> We learned the most from the Material change (Cycle 4). It demonstrated that a perfectly good CAD design can still fail if the material (PLA) is too brittle for delicate electronic housing, requiring a pivot to tougher materials like PETG (our final white mouse bottom).</li>
-                                                <li><strong>Defining & Measuring Success:</strong> We defined quantitative success through pass/fail physical stress testing (desk-height drop tests) and dimensional accuracy (successfully mating the 3D printed handpieces to the mouse bottoms). Qualitative success was measured by ensuring the wire management kept cables out of the user's way.</li>
-                                                <li><strong>Pivots:</strong> We pivoted our design based on physical findings: we pivoted the footmount from a solid block to a hollow routed design to hide wires, and we pivoted our manufacturing material from PLA to PETG when the structural integrity of the electronic housing failed.</li>
-                                            </ul>
-                                    </div>
-
-                                    <!-- Open-Source Build Guide (adapted from the team build guide) -->
-                                    <div class="text-start mt-5 pt-4 border-top">
-                                        <h2 class="fw-bolder text-center">Open-Source Build Guide</h2>
-                                        <p class="text-center lead fw-normal text-muted mb-4">Accessible Gaming Mouse & Foot Pedal Setup</p>
-                                        <!-- TODO: add a photo of the final assembly here (the original pointed to assets/hero-image.jpg, which is not in this repo) -->
-                                    <div class="card bg-white shadow-sm border-0 mb-5">
-                                        <div class="card-body p-5 text-center">
-                                            <h4 class="fw-bold mb-4">Required 3D Print Files</h4>
-                                            <div class="d-flex justify-content-center gap-3 flex-wrap">
-                                                <!-- TODO: put the STL files in assets/ and uncomment these download buttons
-                                                <a href="assets/Handpiece v3.stl" download class="btn btn-primary shadow-sm px-4">
-                                                    <i class="bi bi-download me-2"></i> Download Handpiece STL
-                                                </a>
-                                                <a href="assets/Footmount_v3.stl" download class="btn btn-primary shadow-sm px-4">
-                                                    <i class="bi bi-download me-2"></i> Download Footmount STL
-                                                </a>
-                                                -->
-                                            </div>
-                                            <p class="text-muted small mt-3 mb-0">*The mouse bottom is an open-source Bambu file. <a href="https://makerworld.com/en/models/13716" target="_blank">Link to Bambu original here</a>.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card bg-white shadow-sm border-0 mb-5">
-                                        <div class="card-body p-4 p-md-5">
-                                            <h4 class="fw-bold mb-3 text-center"><i class="bi bi-layers me-2 text-primary"></i>Recommended Slicer Orientation</h4>
-                                            <div class="text-center mb-4">
-                                                <span class="badge bg-secondary px-3 py-2 fw-normal fs-6">
-                                                    <strong>Global Settings:</strong> Prusa MK4 (0.4mm nozzle) &bull; 0.20mm SPEED &bull; PLA &bull; 15% Infill
-                                                </span>
-                                            </div>
-                                            <div class="row g-4">
-                                                <div class="col-md-6 text-center">
-                                                    <!-- TODO add slicer screenshot: <img src="assets/hand-slice.png" alt="Handpiece Slicer View" class="img-fluid rounded shadow-sm mb-3 border"> -->
-                                                    <h6 class="fw-bold">Handpiece (v3)</h6>
-                                                    <ul class="small text-muted d-inline-block text-start mb-0">
-                                                        <li><strong>Time:</strong> 2h 49m</li>
-                                                        <li><strong>Material:</strong> 104.46g (35.03m)</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-md-6 text-center">
-                                                    <!-- TODO add slicer screenshot: <img src="assets/foot-slice.png" alt="Footmount Slicer View" class="img-fluid rounded shadow-sm mb-3 border"> -->
-                                                    <h6 class="fw-bold">Footmount (v3)</h6>
-                                                    <ul class="small text-muted d-inline-block text-start mb-0">
-                                                        <li><strong>Time:</strong> 3h 4m</li>
-                                                        <li><strong>Material:</strong> 140.50g (47.11m)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row gx-5">
-                                        <div class="col-12">
-                                            <div>
-                                                <div class="card bg-white shadow-sm border-0 mb-4">
-                                                    <div class="card-body p-4">
-                                                        <h5 class="fw-bold text-primary mb-3"><i class="bi bi-shield-check me-2"></i>Durability Specs</h5>
-                                                        <h6 class="fw-bold mb-1 small text-dark">Handpiece:</h6>
-                                                        <p class="small text-muted mb-3">500N Top-down (no break), 400N side wall (break), survived stair drop test.</p>
-                                                        <h6 class="fw-bold mb-1 small text-dark">Mousepiece:</h6>
-                                                        <p class="small text-muted mb-0">50N battery section limit. Housing is durable but not intended for heavy force.</p>
-                                                    </div>
-                                                </div>
-
-                                                <div class="card bg-white shadow-sm border-0 mb-4">
-                                                    <div class="card-body p-4">
-                                                        <h5 class="fw-bold text-primary mb-3"><i class="bi bi-list-check me-2"></i>Bill of Materials</h5>
-                                                        <ul class="small text-muted mb-0" style="line-height: 1.8;">
-                                                            <li>1x <a href="https://us.store.bambulab.com/products/wireless-mouse-components-kit-002" target="_blank" class="text-decoration-none">Bambu Mouse Kit <i class="bi bi-box-arrow-up-right"></i></a></li>
-                                                            <li>2x <a href="https://www.amazon.com/s?k=pcb+prototype+board+kit" target="_blank" class="text-decoration-none">PCB Fiber Boards <i class="bi bi-box-arrow-up-right"></i></a></li>
-                                                            <li>2x <a href="https://www.amazon.com/s?k=microswitch+assortment+kit" target="_blank" class="text-decoration-none">Microswitches <i class="bi bi-box-arrow-up-right"></i></a></li>
-                                                            <li><a href="https://www.amazon.com/s?k=hookup+wire+kit+22awg" target="_blank" class="text-decoration-none">22 AWG Wire <i class="bi bi-box-arrow-up-right"></i></a></li>
-                                                            <li><a href="https://www.amazon.com/s?k=soldering+iron+starter+kit" target="_blank" class="text-decoration-none">Soldering Kit <i class="bi bi-box-arrow-up-right"></i></a></li>
-                                                            <li><a href="https://www.amazon.com/s?k=PETG+filament" target="_blank" class="text-decoration-none">PLA/PETG Filament <i class="bi bi-box-arrow-up-right"></i></a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    <button class="btn btn-primary mt-4" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/coming soon photo.jpg" alt="Project coming soon" />
-                                    <!-- Portfolio Modal - Text-->
-        
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <div class="modal fade" id="imageModal" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
-              <div class="modal-content bg-transparent border-0">
-                <div class="modal-body text-center p-0">
-                  <img id="modalImage" class="img-fluid rounded">
-                </div>
-              </div>
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aydin Kijjambu — Portfolio</title>
+  <meta name="description" content="Portfolio of Aydin Kijjambu, Brandeis University student combining computer science, engineering and psychology: human-centered design and accessibility projects." />
+  <meta name="author" content="Aydin Kijjambu" />
+  <meta property="og:title" content="Aydin Kijjambu — Portfolio" />
+  <meta property="og:description" content="Portfolio of Aydin Kijjambu, Brandeis University student combining computer science, engineering and psychology: human-centered design and accessibility projects." />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Aydin Kijjambu</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a class="link" href="engineering.html">Engineering</a></li>
+        <li><a class="link" href="computer-science.html">Computer Science</a></li>
+        <li><a class="link" href="business.html">Business</a></li>
+        <li><a class="link" href="index.html#about">About</a></li>
+        <li><a class="link" href="#contact">Contact</a></li>
+        <li><a class="pill dark small" href="assets/Aydin-Kijjambu-Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div class="intro">
+          <p class="label accent">Brandeis University · Engineering · CS · Psychology</p>
+          <h1>Aydin<br />Kijjambu</h1>
+          <p class="lead">I design and build technology that works for people. My interdisciplinary major combines computer science, engineering and psychology, with a focus on human-centered design and accessibility.</p>
+          <div class="buttons">
+            <a class="pill dark" href="#work">See my work ↓</a>
+            <a class="pill" href="#about">About me</a>
+            <a class="pill" href="assets/Aydin-Kijjambu-Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
           </div>
-          <script>
-            document.querySelectorAll('.clickable-img').forEach(img => {
-        img.addEventListener('click', function () {
-      this.classList.toggle('zoomed');
-        });
-        });
-        </script>
-    </body>
+        </div>
+        <figure>
+          <img src="assets/img/portfolio/Project%205%20Photos/IMG_6614.jpg" alt="Green 3D printed one-handed attachment on an Xbox controller, one of the open-source designs tested for the assistive gaming project" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="stack"><p class="label">Work by subject</p><h2 id="work-title">Three disciplines, one approach.</h2></div>
+          <p class="lead" style="font-size:17px">Every project starts with the people who will use it.</p>
+        </div>
+        <div class="subjects">
+          <a class="subject" href="engineering.html" style="--accent: var(--eng)"><div><p class="label">01</p><h3>Engineering</h3><p>3D printing, CAD, laser cutting, electronics and assistive technology from my ENGR courses.</p></div><div class="foot"><span class="label">5 projects</span><span>View →</span></div></a>
+          <a class="subject" href="computer-science.html" style="--accent: var(--cs)"><div><p class="label">02</p><h3>Computer Science</h3><p>Software, interfaces and code from my CS courses and side projects.</p></div><div class="foot"><span class="label">Coming soon</span><span>Preview →</span></div></a>
+          <a class="subject" href="business.html" style="--accent: var(--bus)"><div><p class="label">03</p><h3>Business</h3><p>Strategy, product and market work from my business courses.</p></div><div class="foot"><span class="label">Coming soon</span><span>Preview →</span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Featured project" style="padding-top:0">
+      <div class="wrap">
+      <a class="feature" href="projects/assistive-gaming-device.html" data-tags="Assistive tech|CAD|Electronics|3D printing">
+        <img src="assets/img/portfolio/Project%205%20Photos/All%20versions%20of%20mouse.jpg" alt="Every version of the 3D printed handpieces and footmounts, lined up in order" />
+        <div class="text">
+          <p class="label accent">Featured · Engineering · Spring 2026</p>
+          <h2>Assistive Gaming Device</h2>
+          <p class="desc">A 3D printed mouse handpiece with foot-pedal clicks, so gamers with upper limb differences can make fast, complex inputs. Four rounds of prototyping took it from a tangle of wires to a durable PETG build.</p>
+          <div class="meta">
+            <div><p class="label">Role</p><strong>Logistics manager</strong></div>
+            <div><p class="label">Team</p><strong>4 people</strong></div>
+            <div><p class="label">Tools</p><strong>Onshape · PrusaSlicer</strong></div>
+          </div>
+          <span class="more">Read the case study →</span>
+        </div>
+      </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="more-title" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="more-title">More from Engineering</h2>
+          <a class="more" href="engineering.html">All engineering projects →</a>
+        </div>
+        <div class="grid">
+        <a class="card" href="projects/prosthetic-hand.html" data-tags="Assistive tech|3D printing">
+          <img src="assets/img/portfolio/Project%204%20Photos/IMG_0383.jpg" alt="Finished white and orange prosthetic hand" loading="lazy" />
+          <div class="body">
+            <p class="label accent">Project 04 · Spring 2026</p>
+            <h3>Prosthetic Hand</h3>
+            <p class="desc">Printed and assembled an open-source prosthetic hand, tested its grip, then scaled it up for larger users.</p>
+          </div>
+        </a>
+        <a class="card" href="projects/laser-cut-robot.html" data-tags="Electronics|Laser cutting|CAD">
+          <img src="assets/img/portfolio/Project%203%20Photos/IMG_5980.jpg" alt="Assembled laser-cut wooden robot chassis labeled ENGR 11A Project 3" loading="lazy" />
+          <div class="body">
+            <p class="label accent">Project 03 · Spring 2026</p>
+            <h3>Laser-Cut Robot</h3>
+            <p class="desc">Soldered a robot's circuit board with my partner and designed its wooden chassis for the laser cutter.</p>
+          </div>
+        </a>
+        <a class="card" href="projects/essentials-organizer.html" data-tags="CAD|3D printing">
+          <img src="assets/img/portfolio/Project%202%20Photos/Proj%202%20Second%20Print.JPG" alt="Second print of the essentials organizer" loading="lazy" />
+          <div class="body">
+            <p class="label accent">Project 02 · Spring 2026</p>
+            <h3>Essentials Organizer</h3>
+            <p class="desc">Designed a desk organizer in TinkerCad, then rebuilt it in Onshape after learning from the first print.</p>
+          </div>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div class="stack" style="display:grid;gap:12px;align-content:start"><p class="label">About</p><h2 id="about-title">Engineer with a<br />psychologist’s<br />questions.</h2></div>
+        <div class="copy">
+          <p>I’m a student at Brandeis building an Independent Interdisciplinary Major in computer science, engineering and psychology. I’m most interested in accessibility and the technology people touch every day, and in making sure it fits the person using it, not the other way around.</p>
+          <div class="facts">
+            <div><p class="label accent">Studying</p><strong>CS + Engineering + Psychology (IIM)</strong></div>
+            <div><p class="label accent">Interested in</p><strong>Accessibility, UX research, product design</strong></div>
+            <div><p class="label accent">Looking for</p><strong>Internships in UX and human-centered design</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="wrap">
+      <div class="top">
+        <h2>Let’s build something<br />that works for people.</h2>
+        <div class="links">
+          <a href="mailto:aydink@brandeis.edu">aydink@brandeis.edu</a>
+          <a href="https://www.linkedin.com/in/aydin-kijjambu-986672247" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/KBradeis" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="assets/Aydin-Kijjambu-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↗</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <p class="label">© 2026 Aydin Kijjambu</p>
+        <p class="label">Brandeis University · Waltham, MA</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
 </html>

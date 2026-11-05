@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assistive Gaming Device — Aydin Kijjambu</title>
+  <meta name="description" content="Case study: a 3D printed mouse handpiece with foot-pedal clicks for gamers with upper limb differences." />
+  <meta name="author" content="Aydin Kijjambu" />
+  <meta property="og:title" content="Assistive Gaming Device — Aydin Kijjambu" />
+  <meta property="og:description" content="Case study: a 3D printed mouse handpiece with foot-pedal clicks for gamers with upper limb differences." />
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link href="../css/site.css" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="../index.html">Aydin Kijjambu</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul id="menu">
+        <li><a class="link" href="../engineering.html" aria-current="page">Engineering</a></li>
+        <li><a class="link" href="../computer-science.html">Computer Science</a></li>
+        <li><a class="link" href="../business.html">Business</a></li>
+        <li><a class="link" href="../index.html#about">About</a></li>
+        <li><a class="link" href="#contact">Contact</a></li>
+        <li><a class="pill dark small" href="../assets/Aydin-Kijjambu-Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="main">
+    <section style="padding-bottom:0">
+      <div class="wrap project-head">
+        <p class="label accent crumbs"><a href="../engineering.html">Engineering</a> / Project 05 · Capstone</p>
+        <h1 class="page">Assistive Gaming Device</h1>
+        <p class="lead">How can we make quick, complex game inputs possible, and affordable, for players with upper limb differences? Our team designed a 3D printed mouse handpiece with foot-pedal clicks and iterated on it four times.</p>
+        <div class="project-meta"><div><p class="label">My role</p><strong>Logistics manager</strong></div><div><p class="label">Team</p><strong>Gerardo Rios, Benjamin Kotzen, Mouse Hardwick, Aydin Kijjambu</strong></div><div><p class="label">Timeline</p><strong>Spring 2026 · ENGR 11A</strong></div><div><p class="label">Tools</p><strong>Onshape · PrusaSlicer · PLA/PETG · Soldering</strong></div></div>
+      </div>
+    </section>
+    <div class="wrap"><img class="hero-img" src="../assets/img/portfolio/Project%205%20Photos/All%20versions%20of%20mouse.jpg" alt="Every version of the 3D printed handpieces and footmounts, lined up in order" /></div>
+    <section>
+      <div class="wrap article">
+        <nav class="toc" aria-label="On this page">
+          <p class="label">On this page</p>
+          <a href="#problem">The problem</a>
+          <a href="#research">Research</a>
+          <a href="#principles">Design principles</a>
+          <a href="#prototyping">Prototyping</a>
+          <a href="#results">Results</a>
+          <a href="#reflection">Reflection</a>
+          <a href="#guide">Build guide</a>
+        </nav>
+        <div class="content">
+          <section id="problem">
+            <p class="label accent">01 · The problem</p>
+            <h2>Fast games are built for two hands.</h2>
+            <p class="big">An estimated 33 million+ gamers in the US have a disability. Most accessible controllers focus on bigger buttons and easier switches. That helps in slower games, but it holds players back in competitive ones, where top players make up to <a href="https://www.nbcnews.com/technolog/how-fast-fast-some-pro-gamers-make-10-moves-second-8c11422946" target="_blank" rel="noopener">10 actions per second</a>. The player’s decisions can be lightning-fast; the hardware is the bottleneck.</p>
+            <blockquote>“How can we make a cost-effective system that makes quick, complex inputs possible for players with upper limb differences?”</blockquote>
+          </section>
+          <section id="research">
+            <p class="label accent">02 · Research</p>
+            <h2>Designing for Duncan.</h2>
+            <div class="boxes">
+              <div class="box"><p class="label">User persona</p><h3>Duncan, high-school junior</h3><p>Plays competitive shooters with friends every night. He has an upper limb difference and spends his time hunting for custom keybinds and modified gear to keep up.</p></div>
+              <div class="box stat"><strong>33M+</strong><p>gamers with disabilities in the US</p></div>
+            </div>
+            <p>We also printed and tested existing open-source solutions, including Joy-Con trigger extenders and a one-handed controller attachment, to learn which mechanisms worked and where they fell short.</p>
+            <div class="photos"><a href="../assets/img/portfolio/Project%205%20Photos/IMG_6614.jpg" target="_blank" rel="noopener" aria-label="Open full-size photo: One-handed controller attachment printed in green and mounted on an Xbox controller"><img src="../assets/img/portfolio/Project%205%20Photos/IMG_6614.jpg" alt="One-handed controller attachment printed in green and mounted on an Xbox controller" loading="lazy" /></a></div>
+          </section>
+          <section id="principles">
+            <p class="label accent">03 · Design principles</p>
+            <h2>What success had to mean.</h2>
+            <div class="boxes">
+              <div class="box"><p class="label accent">A</p><h3>Hands-free clicks</h3><p>Left and right clicks move to foot switches, so the upper limb only steers.</p></div>
+              <div class="box"><p class="label accent">B</p><h3>Wires out of the way</h3><p>Cable management can’t get between the player and the game.</p></div>
+              <div class="box"><p class="label accent">C</p><h3>Survives real use</h3><p>Passes desk-height drop tests and load tests without breaking.</p></div>
+            </div>
+          </section>
+          <section id="prototyping">
+            <p class="label accent">04 · Prototyping</p>
+            <h2>Four cycles, one change at a time.</h2>
+            <div class="cycles">
+            <article class="cycle"><img src="../assets/img/portfolio/Project%205%20Photos/Screenshot%202026-05-03%20at%2011.59.51%E2%80%AFAM.jpg" alt="Handful of messy wires from the first footmount prototype" loading="lazy" /><div class="body"><p class="label accent">Cycle 1 · Baseline</p><h3>First PLA prototype</h3><p>A working setup, but a handful of loose wires came out of the footmount.</p></div></article>
+            <article class="cycle"><img src="../assets/img/portfolio/Project%205%20Photos/Screenshot%202026-05-03%20at%2012.00.00%E2%80%AFPM.jpg" alt="CAD redesign of the 3D printed mouse attachments" loading="lazy" /><div class="body"><p class="label accent">Cycle 2 · CAD change</p><h3>Routed the wires inside</h3><p>We hollowed the footmount and added internal wire channels. This made the biggest difference in usability.</p></div></article>
+            <article class="cycle"><img src="../assets/img/portfolio/Project%205%20Photos/Ben%20working%20with%20mouse.JPG" alt="Teammate testing the connected handpiece and footmount" loading="lazy" /><div class="body"><p class="label accent">Cycle 3 · CAM change</p><h3>Tuned the slicer</h3><p>We changed print orientation and slicer settings to get cleaner, stronger parts.</p></div></article>
+            <article class="cycle"><img src="../assets/img/portfolio/Project%205%20Photos/Screenshot%202026-05-03%20at%2012.00.25%E2%80%AFPM.jpg" alt="Soldering station used to bypass the mouse microswitches" loading="lazy" /><div class="body"><p class="label accent">Cycle 4 · Material change</p><h3>Switched PLA to PETG</h3><p>The PLA mouse housing cracked at the clips. The same design printed in PETG was tougher and held up.</p></div></article>
+            </div>
+          </section>
+          <section id="results">
+            <p class="label accent">05 · Results</p>
+            <h2>Tougher than it looks.</h2>
+            <div class="results">
+              <div><strong>500 N</strong><p>top-down load on the handpiece with no break</p></div>
+              <div><strong>Stairs</strong><p>survived a stair drop test</p></div>
+              <div><strong>2 pedals</strong><p>left and right clicks, fully hands-free</p></div>
+            </div>
+          </section>
+          <section id="reflection">
+            <p class="label accent">06 · Reflection</p>
+            <h2>From consumer to creator.</h2>
+            <p class="big">At the start, I didn’t believe we could build this. Working from a rough first prototype to something genuinely useful changed how I approach making things: start from what the user needs, and let testing decide the next change. The CAD change made the biggest difference; the material change taught us the most, because a good design can still fail in the wrong material.</p>
+          </section>
+          <section id="guide">
+            <p class="label accent">07 · Build guide</p>
+            <h2>Make your own.</h2>
+            <div class="guide">
+              <div style="display:grid;gap:12px;align-content:start">
+                <p class="label">Print files</p>
+                <h3>Handpiece v3 · Footmount v3</h3>
+                <p>Prusa MK4 · 0.4 mm nozzle · 0.20 mm layers · 15% infill. Handpiece: about 2 h 49 min and 104 g. Footmount: about 3 h 4 min and 141 g. The mouse bottom is the open-source <a href="https://makerworld.com/en/models/13716" target="_blank" rel="noopener">Bambu design</a>.</p>
+                <p>STL downloads coming soon.</p>
+              </div>
+              <div>
+                <p class="label">Bill of materials</p>
+                <ul>
+                  <li>1× <a href="https://us.store.bambulab.com/products/wireless-mouse-components-kit-002" target="_blank" rel="noopener">Bambu mouse kit</a></li>
+                  <li>2× PCB fiber boards</li>
+                  <li>2× microswitches</li>
+                  <li>22 AWG wire</li>
+                  <li>Soldering kit</li>
+                  <li>PLA / PETG filament</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <nav class="pager" aria-label="More projects"><div class="wrap"><a href="prosthetic-hand.html"><span class="label">← Previous</span><h3>Project 04 · Prosthetic Hand</h3></a><a class="next" href="../engineering.html"><span class="label">Back to</span><h3>All engineering projects</h3></a></div></nav>
+  <footer id="contact">
+    <div class="wrap">
+      <div class="top">
+        <h2>Let’s build something<br />that works for people.</h2>
+        <div class="links">
+          <a href="mailto:aydink@brandeis.edu">aydink@brandeis.edu</a>
+          <a href="https://www.linkedin.com/in/aydin-kijjambu-986672247" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/KBradeis" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="../assets/Aydin-Kijjambu-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF) ↗</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <p class="label">© 2026 Aydin Kijjambu</p>
+        <p class="label">Brandeis University · Waltham, MA</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
